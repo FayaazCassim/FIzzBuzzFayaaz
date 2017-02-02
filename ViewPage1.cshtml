@@ -1,0 +1,39 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FizzBuzz</title>
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="../../FizzBuzz.js"></script>
+    <style>
+
+        table, td {
+            border: 3px solid grey;
+            padding: 5px;
+            margin-right: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+
+
+<body ng-app="Myapp" ng-controller="controller">
+    <div>
+        <h2>Fizz Buzz</h2>
+        <table>
+            <tr ng-change="data in myArray">
+                <td>{{myArray}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
